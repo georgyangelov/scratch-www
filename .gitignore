@@ -8,6 +8,11 @@ npm-*
 # Build
 /build
 
+# Local environment variables
+.env
+.env.*
+!.env.sample
+
 # Locales
 /locales
 /intl

@@ -14,6 +14,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 // PostCss
 const autoprefixer = require('autoprefixer');
 
+// Load environment variables from a `.env` file.
+// This will silently not do anything if the file is missing, which is what we want for production.
+require('dotenv').config();
+
 /** @type {Array} */
 let routes = require('./src/routes.json');
 const templateConfig = require('./src/template-config.js');

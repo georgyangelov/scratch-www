@@ -156,8 +156,7 @@ To stop the `npm start` process which is making the site available to your web b
 
 #### Configuration
 
-`npm start` can be configured with the following environment variables, by setting them in
-the beginning of the command, before `npm start`:
+`npm start` can be configured with the following environment variables, by setting them in your `.env` file (see .env.sample):
 
 | Variable        | Default                            | Description                                    |
 | --------------- | ---------------------------------- | ---------------------------------------------- |
@@ -170,6 +169,8 @@ the beginning of the command, before `npm start`:
 | `GTM_ENV_AUTH`  | `''`                               | Google Tag Manager env and auth info           |
 | `NODE_ENV`      | `null`                             | If not `production`, app acts like development |
 | `PORT`          | `8333`                             | Port for devserver (http://localhost:XXXX)     |
+
+Alternatively, you can set the variables at the beginning of the command, before `npm start`.
 
 *NOTE: Because by default `API_HOST=https://api.scratch.mit.edu`, please be aware that, by default, you will be seeing and interacting with real data on the Scratch website.*
 
